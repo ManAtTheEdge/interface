@@ -5,4 +5,3 @@ function shouldRedirect() {
         window.location.replace('main.html');
     }
 }
-        

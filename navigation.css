@@ -11,7 +11,7 @@ html {
 nav {
     border-right: 3px solid rgb(0, 0, 0);
     color: #1a1a1a;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .menu {
@@ -28,8 +28,8 @@ nav {
     margin: 5% 0;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    min-height: 50px; 
+    align-items: center;
+    min-height: 50px;
 }
 
 .user {
@@ -44,20 +44,20 @@ nav {
 }
 
 .user::before {
-    content : ''; 
+    content: '';
     display: block;
-    width: 15px; 
-    height: 15px; 
+    width: 15px;
+    height: 15px;
     background: #fff;
     border-radius: 50%;
     position: absolute;
-    left: 50%; 
+    left: 50%;
     top: 5px;
     transform: translateX(-50%);
 }
 
 .user::after {
-    content : '';
+    content: '';
     display: block;
     width: 30px;
     height: 30px;
@@ -84,7 +84,18 @@ ul li {
     cursor: pointer;
 }
 
-a, a:hover, a:active, a:focus {
+a,
+a:hover,
+a:active,
+a:focus {
     text-decoration: none;
     color: #1a1a1a;
-  }
+}
+
+hr {
+    color: #F3F3F3;
+}
+
+li:hover {
+    background: rgb(96, 89, 89);
+}
