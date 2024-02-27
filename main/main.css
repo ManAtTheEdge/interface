@@ -1,88 +1,3 @@
-* {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-html {
-    overflow: hidden;
-}
-
-nav {
-    border-right: 3px solid rgb(0, 0, 0);
-    color: #1a1a1a;
-    background-color:#fff;
-}
-
-.menu {
-    height: 100vh;
-    width: 15%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    outline: none;
-}
-
-.wrapper {
-    margin: 5% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    min-height: 50px; 
-}
-
-.user {
-    width: 40px;
-    height: 40px;
-    border: 4.8px solid rgb(0, 0, 0);
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.user::before {
-    content : ''; 
-    display: block;
-    width: 15px; 
-    height: 15px; 
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%; 
-    top: 5px;
-    transform: translateX(-50%);
-}
-
-.user::after {
-    content : '';
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    transform: translateX(-50%);
-}
-
-ul {
-    list-style: none;
-    padding: 0.5em 0;
-    margin: 0;
-}
-
-ul li {
-    padding: 0.5em 1em 0.5em 3em;
-    background-repeat: no-repeat;
-    background-position: left 15px center;
-    background-size: auto 20px;
-    transition: all 0.15s linear;
-    cursor: pointer;
-}
 
 body {
     position: relative;
@@ -92,7 +7,7 @@ body {
     display: flex;
     margin: auto;
     flex-direction: row-reverse;
-    background: url('back.jpg')no-repeat;
+    background: url('../back.jpg')no-repeat;
     background-position: center;
 }
 
@@ -164,8 +79,3 @@ button {
     color: #E3A20B;
     background-color:#1A2F90;
 }
-
-a, a:hover, a:active, a:focus {
-    text-decoration: none;
-    color: #1a1a1a;
-  }

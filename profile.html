@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="profile/profile.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <script src="profile/profile.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="profile.html">
+            <div class="wrapper">
+                <div class="user"></div>
+            </div>
+        </a>
+        <hr>
+        <ul>
+            <li tabindex="0" class="icon-dashboard"><span>Новый отчёт</span></li>
+            <hr>
+            <li tabindex="0" class="icon-customers"><span>Сохранённые отчёты</span></li>
+            <hr>
+            <a href="auth.html">
+                <li tabindex="0" class="icon-users"><span>Выход</span></li>
+            </a>
+            <hr>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <input type="checkbox" onclick="enableFields(checked)" id="Correction" />
+            <div>
+                <div class="parent_block">
+                    <label for="FullName">ФИО</label>
+                    <input type="text" value="Орлов Михаил Сергеевич" disabled id="FullName">
+                </div>
+                <div class="parent_block">
+                    <label for="Place">Город</label>
+                    <input type="text" value="Санкт-Петербург" disabled id="Place">
+                </div>
+                <div class="parent_block">
+                    <label for="Post">Должность</label>
+                    <select name="Post" value="1" disabled id="Post">
+                        <option value="1">Стажёр</option>
+                        <option value="2">Консультант</option>
+                        <option value="3">Разработчик</option>
+                        <option value="4">Тестировщик</option>
+                        <option value="5">Аналитик</option>
+                        <option value="6">Менеджер команды</option>
+                    </select>
+                </div>
+                <div class="parent_block">
+                    <label for="Chief">Руководитель</label>
+                    <input type="text" value="Опытов Программист Отбогович" disabled id="Chief">
+                </div>
+            </div>
+            <div class="photo_div">
+                <figure class="figure-block">
+                    <img src="profile/photo.png" alt="Profile photo">
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

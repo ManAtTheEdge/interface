@@ -1,0 +1,70 @@
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    background: url('../back.jpg')no-repeat;
+    background-position: center;
+}
+
+main {
+    width: 80%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+section {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #1a1a1a;
+    flex-direction: row-reverse;    
+}
+
+.parent_block {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.parent_block label {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+    padding-right: 5px;
+}
+
+.parent_block input {
+    width: 80%;
+}
+
+.parent_block select {
+    width: 80%;
+}
+
+.figure-block {
+    margin: 10px;
+    padding: auto;
+}
+
+.figure-caption {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+img {
+    object-fit: fill;
+    max-width: 200px;
+}
