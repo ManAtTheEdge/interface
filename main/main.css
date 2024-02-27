@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+nav {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.menu {
+    background: #ffde98;
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+}
+
+.wrapper {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 50px; 
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    border: 4.8px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.user::before {
+    content : ''; 
+    display: block;
+    width: 15px; 
+    height: 15px; 
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%; 
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+.user::after {
+    content : '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+}
+
+hr {
+    margin: 0 4%;
+    color: #F3F3F3;
+}
+
+ul {
+    list-style: none;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0.5em 1em 0.5em 3em;
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: auto 20px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+main {
+    width: 80%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+header svg {
+    display: block;
+    margin: 2% auto;
+}
+
+hr {
+    margin: 0 4%;
+    color: #F3F3F3;
+}
+
+.main-head-1 {
+    margin: 4% 4% 10% 4%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1E23
+}
+
+.parent-block {
+    display: flex;
+    margin: 4%;
+    padding: 20px 0px;
+}
+
+.child_block {
+    width: 50%;
+    margin: auto;
+}
+
+.figure-block {
+    margin: 0;
+    padding: auto;
+}
+
+.figure-caption {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin: 0 4%;
+}
+
+img {
+    padding: 0;
+    object-fit: fill;
+    margin: -15% 0;
+}
+
+button {
+    margin: 10% 4%;
+    width: 70%;
+    height: 40px;
+    border-radius: 7px;
+    border-width: 0px;
+    color: white;
+    background-color: #489DFF;
+}
