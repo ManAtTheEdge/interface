@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./auth/auth.css">
+        <script src="auth/auth.js"></script>
     </head>
     <main>
         <section>
@@ -10,14 +11,14 @@
                     <h2>Добро пожаловать!</h2>
                     <div class="inputbox">
                         <label for="login">Логин</label>
-                        <input type="text" placeholder="Email или Телефон" id="login">
+                        <input type="text" placeholder="Email или Телефон" required id="login">
                     </div>
                     <div class="inputbox">
                         <label for="">Пароль</label>
-                        <input type="password" placeholder="******" required>
+                        <input type="password" placeholder="******" required id="password">
                     </div>
-                    <button onclick="window.location.href = 'main.html';">Войти</button>
                 </form>
+                <button onclick="shouldRedirect()">Войти</button>
             </div>
         </section>
     </main>
