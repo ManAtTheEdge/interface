@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="newReport/newReport.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <script src="newReport/newReport.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <a href="profile.html">
+            <div class="wrapper">
+                <div class="user"></div>
+            </div>
+        </a>
+        <hr>
+        <ul>
+            <a href="main.html">
+                <li tabindex="0" class="icon-dashboard"><span>Рабочий стол</span></li>
+            </a>
+            <hr>
+            <a href="#">
+                <li tabindex="1" class="icon-dashboard"><span>Новый отчёт</span></li>
+            </a>
+            <hr>
+            <li tabindex="2" class="icon-customers"><span>Сохранённые отчёты</span></li>
+            <hr>
+            <a href="auth.html">
+                <li tabindex="3" class="icon-users"><span>Выход</span></li>
+            </a>
+            <hr>
+        </ul>
+    </nav>
+    <section>
+        <form>
+            <div class="periodSection">
+                <div>
+                    <label for="periodStartDate">Дата начала отчётного периода</label>
+                    <input type="month" name="periodStartDate" id="periodStartDate" required>
+                </div>
+                <div id="periodEndSection" hidden>
+                    <label for="periodEndDate">Дата окончания отчётного периода</label>
+                    <input type="month" name="periodEndDate" id="periodEndDate">
+                </div>
+                <div>
+                    <label for="fewMonthsReport">Отчёт за несколько месяцев?</label>
+                    <input type="checkbox" id="fewMonthsReport" onclick="CheckFewMonthsCheckBox(checked)">
+                </div>
+            </div>
+            <div class="paymentSection">
+                <div>
+                    <div class="payment-blocks">
+                        <label for="representation">Представительские расходы</label>
+                        <input type="text" name="representation" id="representation" onchange="calculateExpenses()">
+                        <input type="file" name="representation-file" accept="application/pdf">
+                    </div>
+                    <div class="payment-blocks">
+                        <label for="trip">Командировочные расходы</label>
+                        <input type="text" name="trip" id="trip" onchange="calculateExpenses()">
+                        <input type="file" name="trip-file" accept="application/pdf">
+                    </div>
+                </div>
+                <div>
+                    <div class="payment-blocks">
+                        <label for="auto">Расходы на автомобиль</label>
+                        <input type="text" name="auto" id="auto" onchange="calculateExpenses()">
+                        <input type="file" name="auto-file" accept="application/pdf">
+                    </div>
+                    <div class="payment-blocks">
+                        <label for="others">Прочие расходы</label>
+                        <input type="text" name="others" id="others" onchange="calculateExpenses()">
+                        <input type="file" name="others-file" accept="application/pdf">
+                    </div>
+                </div>
+                <div>
+                    <div class="payment-blocks">
+                        <label for="representation">Итоговая сумма</label>
+                        <input type="text" name="calculatedExpenses" id="calculatedExpenses" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="payment-buttons">
+            <button name="Save and Send Report" id="saveAndSendButton" disabled onclick="sendForm()">Сохранить и отправить на согласование</button> 
+            <button name="Save Report" onclick="validateBeforeSave()">Сохранить</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     position: relative;
     height: 100vh;
@@ -66,7 +68,7 @@ img {
 
 button {
     margin: 10% 4%;
-    width: 70%;
+    width: 75%;
     height: 40px;
     border-radius: 7px;
     border-width: 0px;
