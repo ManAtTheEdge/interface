@@ -28,3 +28,15 @@ table td {
 	border: none;
 	border-bottom: 5px solid #F2F8F8;
 }
+
+main {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    background: url('../back.jpg')no-repeat;
+    background-position: center;
+}

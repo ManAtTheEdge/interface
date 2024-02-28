@@ -106,3 +106,15 @@ button {
     margin: -2% 2%;
     height: 100px;
 }
+
+main {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    background: url('../back.jpg')no-repeat;
+    background-position: center;
+}

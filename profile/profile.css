@@ -6,6 +6,18 @@ main {
     margin-top: 2em;
 }
 
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    background: url('../back.jpg')no-repeat;
+    background-position: center;
+}
+
 section {
     position: relative;
     width: 700px;
