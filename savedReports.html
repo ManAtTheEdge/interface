@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="savedReports/savedReports.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="profile.html">
+            <div class="wrapper">
+                <div class="user"></div>
+            </div>
+        </a>
+        <hr>
+        <ul>
+            <a href="main.html">
+                <li tabindex="0" class="icon-dashboard"><span>Рабочий стол</span></li>
+            </a>
+            <hr>
+            <a href="newReport.html">
+                <li tabindex="1" class="icon-dashboard"><span>Новый отчёт</span></li>
+            </a>
+            <hr>
+            <a href="#">
+                <li tabindex="2" class="icon-customers"><span>Сохранённые отчёты</span></li>
+            </a>
+            <hr>
+            <a href="auth.html">
+                <li tabindex="3" class="icon-users"><span>Выход</span></li>
+            </a>
+            <hr>
+        </ul>
+    </nav>
+    <section>
+        <div class="table-container">
+            <table class="table-sortable">
+                <thead>
+                    <tr>
+                        <th>Номер отчёта</th>
+                        <th abbr="Месяц">Месяц</th>
+                        <th abbr="Год">Год</th>
+                        <th abbr="Статус">Статус</th>
+                        <th>Комментарий</th>
+                        <th abbr="Дата согласования">Дата согласования</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>02</td>
+                        <td>2024</td>
+                        <td>Принят</td>
+                        <td>Принято Петровым А.П.</td>
+                        <td>25.02.2024</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>2021</td>
+                        <td>Не принят</td>
+                        <td>Не были учтены все прочие расходы.</td>
+                        <td>25.12.2021</td>
+                    </tr>
+                    <tr>
+                        <td>92</td>
+                        <td>04</td>
+                        <td>2024</td>
+                        <td>Отправлен на проверку</td>
+                        <td>Будет рассмотрен на следующей неделе.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>02</td>
+                        <td>2024</td>
+                        <td>Сохранён</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./savedReports/savedReports.js"></script>
+</body>
+
+</html>

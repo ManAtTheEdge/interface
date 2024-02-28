@@ -1,0 +1,30 @@
+section {
+    width: 80%;
+    height: 90%;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    margin: 2%;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+table {
+    width: 100%;
+	margin-bottom: 20px;
+	border: 15px solid #F2F8F8;
+	border-top: 5px solid #F2F8F8;
+	border-collapse: collapse; 
+}
+
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #F2F8F8;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+}
+table td {
+	padding: 5px;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+}
